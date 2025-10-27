@@ -1,0 +1,99 @@
+body{
+  margin: 0;
+  background-color:white;
+  color: brown;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+  text-align: center;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:8px;
+}
+img{
+  height: 52px;
+}
+.inputData{
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap:8px;
+  margin-bottom: 20px;
+  width:100vw;
+}
+input{
+  width:clamp(80px,20vw,200px);
+  height: 24px;
+  border-radius: 8px;
+  border:1px solid brown;
+  background-color: white;
+  
+}
+@media(max-width:395px){
+  body{
+    width:100%;
+  }
+  #root{
+    width:100%;
+  }
+  img{
+    height:10vh;
+  }
+  .inputData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+  input{
+    width:50%;
+  }
+  button{
+    padding: 8px;
+  }
+}
+button{
+  width:4rem;
+  border-radius: 5px;
+  border:0px;
+  background-color: brown;
+  color:blanchedalmond;
+}
+section {
+  margin-top: 0px;
+  display: flex;
+  gap:8px;
+}
+h4{
+  margin-bottom: 5px;
+}
+.skill{
+  background-color: brown;
+  color:blanchedalmond;
+  border-radius: 12px;
+  padding: 4.5px;
+  font-size: smaller;
+}
+.skilltags{
+  display: flex;
+  gap:5px;
+  flex-wrap: wrap;
+}
+.jobcards{
+  margin:8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+.jobcard{
+  padding:8px;
+  margin:8px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px brown;
+}
+a {
+  text-decoration: none;
+  color:brown;
+}
